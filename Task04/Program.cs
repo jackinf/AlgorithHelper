@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Task04
@@ -41,13 +42,14 @@ namespace Task04
 
                 if (maxLeftX <= minRightY && maxLeftY <= minRightX)
                 {
-                    if (x + y % 2 == 0)
+                    if ((x + y) % 2 == 0)
                     {
-                        return (double)(Math.Max(maxLeftX, maxLeftY) + Math.Min(minRightX, minRightY)) / 2;
+                        var median = ((double)Math.Max(maxLeftX, maxLeftY) + Math.Min(minRightX, minRightY)) / 2;
+                        return median;
                     }
                     else
                     {
-                        return Math.Max(maxLeftX, maxLeftY);
+                        return (double)Math.Max(maxLeftX, maxLeftY);
                     }
                 }
                 else if (maxLeftX > minRightY)

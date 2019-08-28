@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Task11</AssemblyName>
+    <RootNamespace>Task11</RootNamespace>
+    <PackageId>Task11</PackageId>
+    <Authors>Task11</Authors>
+  </PropertyGroup>
+
+</Project>
